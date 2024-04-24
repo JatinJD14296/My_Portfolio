@@ -12,21 +12,21 @@ export default function Contact() {
         <div className="container">
           <HeaderInfo>
             <h1 className="font40 extraBold">Let's get in touch</h1>
-            <p className="font13">
-              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
-              <br />
-              labore et dolore magna aliquyam erat, sed diam voluptua.
-            </p>
+           <p>
+           Feel Free To Fill the Below Form
+
+           </p>
           </HeaderInfo>
           <div className="row" style={{ paddingBottom: "30px" }}>
             <div className="col-xs-12 col-sm-12 col-md-6 col-lg-6">
               <Form>
-                <label className="font13">First name:</label>
+                <label className="font14">First name:</label>
                 <input type="text" id="fname" name="fname" className="font20 extraBold" />
-                <label className="font13">Email:</label>
+                <label className="font14">Email:</label>
                 <input type="text" id="email" name="email" className="font20 extraBold" />
-                <label className="font13">Subject:</label>
+                <label className="font14">Subject:</label>
                 <input type="text" id="subject" name="subject" className="font20 extraBold" />
+                <label className="font14">Remark:</label>
                 <textarea rows="4" cols="50" type="text" id="message" name="message" className="font20 extraBold" />
               </Form>
               <SumbitWrapper className="flex">  
@@ -38,8 +38,7 @@ export default function Contact() {
                 <ContactImgBox>
                 <img src={ContactImg1} alt="office" className="radius6" width={80}/>
                   <h2>Phone Me</h2>
-                  <span><a href="tel:123-456-7890">(+61)4107 32787</a></span>
-                 
+                  <span><a href="tel:123-456-7890">+61 410 732 787</a></span>
                 </ContactImgBox>
                 <ContactImgBox>
                 <img src={ContactImg2} alt="office" className="radius6" width={80}/>

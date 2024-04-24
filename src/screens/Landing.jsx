@@ -10,22 +10,20 @@ import Services from "../components/Sections/Services"
 import Chart from "../components/Sections/Chart";
 import Footer from "../components/Sections/Footer";
 
-
 export default function Landing() {
   return (
-    <>
-
+    <div>
       <TopNavbar />
       <Header />
       <About/>
       <Services/>
+      <Chart/>
       <Projects/>
       <Blog />
       <Contact />
-      <Chart/>
       <Footer />
 
-    </>
+    </div>
   );
 }
 
