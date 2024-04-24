@@ -37,16 +37,16 @@ export default function Projects() {
   return (  
     <Wrapper id="Projects">
       <div className="whiteBg">
-        <div className="container"> 
+        <div className="container text-center"> 
           <HeaderInfo>
-            <h1 className="font40 extraBold">Our Awesome Projects</h1>
+            <h1 className="font40 extraBold">My Awesome Projects</h1>
             <p className="font13">
               Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
               <br />
               labore et dolore magna aliquyam erat, sed diam voluptua.
             </p>
           </HeaderInfo>
-          <div className="row textCenter">
+          <div className="row">
               {userData.map((data)=>{
                 return(
               <div className="col-xs-12 col-sm-4 col-md-4 col-lg-4">

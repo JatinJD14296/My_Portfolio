@@ -12,15 +12,16 @@ export default function Services() {
     <Wrapper id="services">
       <div className="lightBg">
         <div className="container">
-          <ClientSlider />  
+          <ClientSlider />
         </div>
       </div>
-      <div className="whiteBg" style={{ padding: "60px 0" }}>
-        <div className="container">
+      <div className="whiteBg">
+        <div className="container text-center">
           <HeaderInfo>
-            <h1 className="font40 extraBold">What is my Website Development Skill</h1>
+            <h1 className="font40 extraBold">What are my Development Skills</h1>
             <p className="font13">
-              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
+              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+              nonumy eirmod tempor invidunt ut
               <br />
               labore et dolore magna aliquyam erat, sed diam voluptua.
             </p>
@@ -48,7 +49,11 @@ export default function Services() {
               />
             </ServiceBoxWrapper>
             <ServiceBoxWrapper>
-              <ServiceBox icon="printer" title="Print" subtitle="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor." />
+              <ServiceBox
+                icon="printer"
+                title="Print"
+                subtitle="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor."
+              />
             </ServiceBoxWrapper>
           </ServiceBoxRow>
         </div>
@@ -56,15 +61,30 @@ export default function Services() {
           <div className="container">
             <Advertising className="flexSpaceCenter">
               <AddLeft>
-                <h4 className="font15 semiBold">A few words about company</h4>
-                <h2 className="font40 extraBold">A Study of Creativity</h2>
-                <p className="font12">
-                  Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed
-                  diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
+                <h4 className="font15 semiBold">
+                  A few words about my achievements
+                </h4>
+                <h2 className="font40 extraBold">Achievements</h2>
+                <p className="font14">
+                  I am proud to have earned various certifications and
+                  achievements throughout my career. I attended the Flutter
+                  Bootcamp in Vadodara and actively participated in the
+                  International Flutter Hackathon, where I emerged as a winner,
+                  ranking 7th worldwide. Moreover, I completed the Introduction
+                  to Flutter Development using Dart course from the prestigious
+                  App Brewery.
                 </p>
-                <ButtonsRow className="flexNullCenter" style={{ margin: "30px 0"}}>
+                <ButtonsRow
+                  className="flexNullCenter"
+                  style={{ margin: "30px 0" }}
+                >
                   <div style={{ width: "190px" }}>
-                    <FullButton title="Contact Us" action={() => alert("clicked")} />
+                    <a href="#contact">
+                      {" "}
+                      <FullButton
+                        title="Contact Me"
+                      />
+                    </a>
                   </div>
                 </ButtonsRow>
               </AddLeft>

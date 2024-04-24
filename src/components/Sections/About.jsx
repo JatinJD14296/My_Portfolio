@@ -6,39 +6,43 @@ import FullButton from "../Buttons/FullButton";
 import AddImage2 from "../../assets/img/add/add2.jpeg";
 
 export default function About() {
-
-    return(
-        
-        <Wrapper id="About">
-            <div className="lightBg">
-                <div className="container">
-                  <Advertising className="flexSpaceCenter">
-                    <AddLeft>
-                      <AddLeftInner>
-                        <ImgWrapper className="flexCenter">
-                          <img className="radius8" src={AddImage2} alt="add" />
-                        </ImgWrapper>
-                      </AddLeftInner>
-                    </AddLeft>
-                    <AddRight>
-                      <h4 className="font15 semiBold">A few words about company</h4>
-                      <h2 className="font40 extraBold">A Study of Creativity</h2>
-                      <p className="font12">
-                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed
-                        diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
-                      </p>
-                      <ButtonsRow style={{ margin: "30px 0" }}>
-                        <div style={{ width: "190px" }}>
-                          <a href="#contact" ><FullButton title="Get Started" /></a>
-                        </div>
-                      </ButtonsRow>
-                    </AddRight>
-                  </Advertising>
+  return (
+    <Wrapper id="About">
+      <div className="lightBg">
+        <div className="container">
+          <Advertising className="flexSpaceCenter">
+            <AddLeft>
+              <AddLeftInner>
+                <ImgWrapper className="flexCenter">
+                  <img className="radius8" src={AddImage2} alt="add" />
+                </ImgWrapper>
+              </AddLeftInner>
+            </AddLeft>
+            <AddRight>
+              <h4 className="font15 semiBold">Few words about me</h4>
+              <h2 className="font40 extraBold">
+                Seasoned software developer with specialization in mobile apps
+              </h2>
+              <p className="font14">
+                <br />I am a highly motivated and skilled professional with
+                expertise in mobile app development and a passion for creating
+                innovative solutions. With a strong technical background and
+                proficiency in various programming languages such as C, C++,
+                Java, Kotlin, React and Dart.
+              </p>
+              <ButtonsRow style={{ margin: "30px 0" }}>
+                <div style={{ width: "190px" }}>
+                  <a href="#contact">
+                    <FullButton title="Get in Touch" />
+                  </a>
                 </div>
-            </div>
-        </Wrapper>
-    )
-
+              </ButtonsRow>
+            </AddRight>
+          </Advertising>
+        </div>
+      </div>
+    </Wrapper>
+  );
 }
 const Wrapper = styled.section`
   width: 100%;

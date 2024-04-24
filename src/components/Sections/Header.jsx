@@ -12,28 +12,42 @@ export default function Header() {
     <Wrapper id="home" className="container flexSpaceCenter">
       <LeftSide className="flexCenter">
         <div>
-          <h1 className="extraBold font60">Hi! i am jatin Hirapara</h1>
-          <HeaderP className="font13 semiBold">
-            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
-            voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
-          </HeaderP>
+          <h1 className="extraBold font60">Hi! I'm Jatin Hirapara</h1>
+          <HeaderP className="font40 semiBold">- Flutter Developer</HeaderP>
           <BtnWrapper>
-            <FullButton title="Get Started" />
+            <a href="#contact">
+              <FullButton title="Get In Touch" />
+            </a>
           </BtnWrapper>
         </div>
       </LeftSide>
       <RightSide>
         <ImageWrapper>
-          <Img className="radius8" src={HeaderImage} alt="office" style={{zIndex: 9}} width={400} />
+          <Img
+            className="radius8"
+            src={HeaderImage}
+            alt="office"
+            style={{ zIndex: 9 }}
+            width={400}
+          />
           <QuoteWrapper className="flexCenter darkBg radius8">
             <QuotesWrapper>
               <QuotesIcon />
             </QuotesWrapper>
             <div>
               <p className="font15 whiteColor">
-                <em>Friends, such as we desire, are dreams and fables. Friendship demands the ability to do without it.</em>
+                <em>
+                  Explore my Flutter achievements portfolio for a showcase of
+                  cross-platform marvels. From mobile apps to desktop wonders,
+                  witness the power of Flutter in action.{" "}
+                </em>
               </p>
-              <p className="font13 orangeColor textRight" style={{marginTop: '10px'}}>jatin Hirapara</p>
+              <p
+                className="font13 orangeColor textRight"
+                style={{ marginTop: "10px" }}
+              >
+                Jatin Hirapara
+              </p>
             </div>
           </QuoteWrapper>
           <DotsWrapper>
@@ -45,7 +59,6 @@ export default function Header() {
     </Wrapper>
   );
 }
-
 
 const Wrapper = styled.section`
   padding-top: 80px;
@@ -151,5 +164,3 @@ const DotsWrapper = styled.div`
     display: none;
   }
 `;
-
-
