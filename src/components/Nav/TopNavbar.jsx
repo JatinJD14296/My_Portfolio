@@ -27,7 +27,7 @@ export default function TopNavbar() {
       <Wrapper className="flexCenter animate whiteBg" style={y > 100 ? { height: "60px" } : { height: "80px" }}>
         <NavInner className="container flexSpaceCenter">
           <Link className="pointer flexNullCenter" to="home" smooth={true}> 
-            <h1 style={{ marginLeft: "15px", fontSize:'30px'}} className="font20 extraBold">
+            <h1 style={{ marginLeft: "15px", fontSize:'30px', fontFamily: 'Ananda'}} className="font20 extraBold">
             jatin Hirapara
             </h1>
           </Link>
