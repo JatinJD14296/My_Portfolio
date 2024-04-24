@@ -20,10 +20,6 @@ export default function Services() {
           <HeaderInfo>
             <h1 className="font40 extraBold">What are my Development Skills</h1>
             <p className="font13">
-              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-              nonumy eirmod tempor invidunt ut
-              <br />
-              labore et dolore magna aliquyam erat, sed diam voluptua.
             </p>
           </HeaderInfo>
           <ServiceBoxRow className="flex">
@@ -48,13 +44,13 @@ export default function Services() {
                 subtitle="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat."
               />
             </ServiceBoxWrapper>
-            <ServiceBoxWrapper>
+            {/* <ServiceBoxWrapper>
               <ServiceBox
                 icon="printer"
                 title="Print"
                 subtitle="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor."
               />
-            </ServiceBoxWrapper>
+            </ServiceBoxWrapper> */}
           </ServiceBoxRow>
         </div>
         <div className="lightBg">

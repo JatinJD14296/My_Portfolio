@@ -5,13 +5,11 @@ import axios from "axios";
 import { useState, useEffect } from "react";
 // Components
 import ProjectBox from "../Elements/ProjectBox";
-import FullButton from "../Buttons/FullButton";
 // Assets
 import ProjectImg1 from "../../assets/img/projects/1.png";
 
 export default function Projects() {
   const [userData, setDeta] = useState([]);
-  const [limit, setLimit] = useState(6);
 
   useEffect(() => {
     // console.log("Hello");
@@ -27,10 +25,6 @@ export default function Projects() {
         console.log(error);
       });
   }, [limit]);
-
-  const LoadMore = () => {
-    setLimit(limit + 6);
-  };
 
   return (
     <Wrapper id="Projects">
