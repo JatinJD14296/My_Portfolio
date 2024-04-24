@@ -12,7 +12,6 @@ export default function Projects() {
   const [userData, setDeta] = useState([]);
 
   useEffect(() => {
-    // console.log("Hello");
     axios
       .get("https://api.github.com/users/JatinJD14296/repos")
       .then(function (response) {
@@ -24,7 +23,7 @@ export default function Projects() {
         // handle error
         console.log(error);
       });
-  }, [limit]);
+  });
 
   return (
     <Wrapper id="Projects">
