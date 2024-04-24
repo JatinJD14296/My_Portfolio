@@ -6,7 +6,7 @@ import About from "../components/Sections/About";
 import Projects from "../components/Sections/Projects";
 import Blog from "../components/Sections/Blog";
 import Contact from "../components/Sections/Contact";
-import Services from "../components/Sections/Services"
+import Services from "../components/Sections/Services";
 import Chart from "../components/Sections/Chart";
 import Footer from "../components/Sections/Footer";
 
@@ -15,16 +15,13 @@ export default function Landing() {
     <div>
       <TopNavbar />
       <Header />
-      <About/>
-      <Services/>
-      <Chart/>
-      <Projects/>
+      <About />
+      <Services />
+      <Chart />
+      <Projects />
       <Blog />
       <Contact />
       <Footer />
-
     </div>
   );
 }
-
-
