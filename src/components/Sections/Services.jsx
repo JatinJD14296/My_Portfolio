@@ -1,7 +1,6 @@
 import React from "react";
 import styled from "styled-components";
 // Components
-import ClientSlider from "../Elements/ClientSlider";
 import ServiceBox from "../Elements/ServiceBox";
 import FullButton from "../Buttons/FullButton";
 // Assets
@@ -11,46 +10,39 @@ export default function Services() {
   return (
     <Wrapper id="services">
       <div className="lightBg">
-        <div className="container">
-          <ClientSlider />
-        </div>
+        <div className="container"></div>
       </div>
-      <div className="whiteBg">
+      <div className="whiteBg text-center">
         <div className="container text-center">
           <HeaderInfo>
-            <h1 className="font40 extraBold">What are my Development Skills</h1>
-            <p className="font13">
-            </p>
+            <h1 className="font40 extraBold">My Work History</h1>
+            <p className="font13"></p>
           </HeaderInfo>
           <ServiceBoxRow className="flex">
             <ServiceBoxWrapper>
               <ServiceBox
-                icon="roller"
-                title="Graphic Design"
-                subtitle="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua."
+                icon="flutter"
+                title="FLUTTER DEVELOPER"
+                tag="3.8 Years"
+                subtitle="Troubleshooting · Technical Support · Desktop Computers · Teamwork · Microsoft 365 · Service Desk · Ticketing Systems · IT Projects · Information Technology · Team Management · Problem Solving · Software Management · Databases · Help Desk Support · Communication."
               />
             </ServiceBoxWrapper>
             <ServiceBoxWrapper>
               <ServiceBox
-                icon="monitor"
-                title="Web Design"
-                subtitle="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore."
+                icon="stock-take"
+                title="STOCK TAKER"
+                tag="1 Year"
+                subtitle="Troubleshooting · Technical Support · Desktop Computers · Microsoft 365 · Service Desk · Ticketing Systems · Team Management · Problem Solving · Software Management · Help Desk Support."
               />
             </ServiceBoxWrapper>
             <ServiceBoxWrapper>
               <ServiceBox
-                icon="browser"
-                title="Development"
-                subtitle="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat."
+                icon="google"
+                title="GDSC LEAD QUT"
+                tag="8 Months"
+                subtitle="Teamwork · Microsoft 365 · Information Technology · Team Management · Problem Solving · Communication."
               />
             </ServiceBoxWrapper>
-            {/* <ServiceBoxWrapper>
-              <ServiceBox
-                icon="printer"
-                title="Print"
-                subtitle="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor."
-              />
-            </ServiceBoxWrapper> */}
           </ServiceBoxRow>
         </div>
         <div className="lightBg">
@@ -77,9 +69,7 @@ export default function Services() {
                   <div style={{ width: "190px" }}>
                     <a href="#contact">
                       {" "}
-                      <FullButton
-                        title="Contact Me"
-                      />
+                      <FullButton title="Contact Me" />
                     </a>
                   </div>
                 </ButtonsRow>

@@ -28,6 +28,7 @@ export default function Sidebar({ sidebarOpen, toggleSidebar }) {
             className="whiteColor"
             style={{ padding: "10px 15px" }}
             to="home"
+            color="white"
             spy={true}
             smooth={true}
             offset={-60}

@@ -5,7 +5,6 @@ import FullButton from "../Buttons/FullButton";
 // Assets
 import HeaderImage from "../../assets/img/jatinbhai.png";
 import QuotesIcon from "../../assets/svg/Quotes";
-import Dots from "../../assets/svg/Dots";
 
 export default function Header() {
   return (
@@ -46,13 +45,13 @@ export default function Header() {
                 className="font13 orangeColor textRight"
                 style={{ marginTop: "10px" }}
               >
-                Jatin Hirapara
+                - Jatin Hirapara
               </p>
             </div>
           </QuoteWrapper>
-          <DotsWrapper>
+          {/* <DotsWrapper>
             <Dots />
-          </DotsWrapper>
+          </DotsWrapper> */}
         </ImageWrapper>
         <GreyDiv className="lightBg"></GreyDiv>
       </RightSide>

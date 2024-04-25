@@ -1,37 +1,36 @@
 import React from "react";
 import styled from "styled-components";
 // Assets
-import RollerIcon from "../../assets/svg/Services/RollerIcon";
-import MonitorIcon from "../../assets/svg/Services/MonitorIcon";
-import BrowserIcon from "../../assets/svg/Services/BrowserIcon";
+import FlutterLogo from "../../assets/svg/Services/FlutterLogo";
+import StockTake from "../../assets/svg/Services/StockTake";
+import Google from "../../assets/svg/Services/Google";
 import PrinterIcon from "../../assets/svg/Services/PrinterIcon";
 
-export default function ServiceBox({icon, title, subtitle}) {
+export default function ServiceBox({ icon, title, subtitle, tag }) {
   let getIcon;
 
   switch (icon) {
-    case "roller":
-      getIcon = <RollerIcon />;
+    case "flutter":
+      getIcon = <FlutterLogo />;
       break;
-    case "monitor":
-      getIcon = <MonitorIcon />;
+    case "stock-take":
+      getIcon = <StockTake />;
       break;
-    case "browser":
-      getIcon = <BrowserIcon />;
-      break;
-    case "printer":
-      getIcon = <PrinterIcon />;
+    case "google":
+      getIcon = <Google />;
       break;
     default:
-      getIcon = <RollerIcon />;
+      getIcon = <FlutterLogo />;
       break;
   }
 
-
   return (
-    <Wrapper className="flex flexColumn">
+    <Wrapper className="flex flexColumn text-center">
       <IconStyle>{getIcon}</IconStyle>
       <TitleStyle className="font20 extraBold">{title}</TitleStyle>
+      <div className="flex">
+        <p className="tag coralBg radius6 font13 extraBold">{tag}</p>
+      </div>
       <SubtitleStyle className="font13">{subtitle}</SubtitleStyle>
     </Wrapper>
   );
@@ -49,7 +48,7 @@ const TitleStyle = styled.h2`
   width: 100%;
   max-width: 300px;
   margin: 0 auto;
-  padding: 40px 0;
+  padding: 20px 0;
   @media (max-width: 860px) {
     padding: 20px 0;
   }
