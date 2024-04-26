@@ -3,9 +3,11 @@ import styled from "styled-components";
 
 export default function BlogBox({imgs, tag, title, text, action, author }) {
   return (
-    <WrapperBtn className="animate pointer" onClick={action ? () => action() : null}>
+    <WrapperBtn className="animate pointer bottom-margin" onClick={action ? () => action() : null}>
       <Wrapper className="whiteBg radius8 shadow">
-        <img src={imgs} alt="office" className="radius6" width={350} style={{ padding: "0px 0 20px 0" }}/>
+      <div className="flexCenter">
+      <img src={imgs} alt="office" className="radius6 mobile-blog" width={350} style={{ padding: "0px 0 20px 0"}}/>
+      </div>
         <h3 className="font20 extraBold">{title}</h3>
         <p className="font13" style={{ padding: "20px 0" }}>
           {text}

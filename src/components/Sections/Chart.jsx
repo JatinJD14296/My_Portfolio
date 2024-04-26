@@ -3,10 +3,9 @@ import React, { useState } from 'react';
 import { HorizontalBar } from 'react-chartjs-2';
 import { CDBContainer } from 'cdbreact';
 
-const Chart = ({listOfData}) => {
+const Chart = () => {
   const [data] = useState({
-    labels: listOfData,
-    // labels: [ 'HTML', 'CSS', 'DART', 'FLUTTER', 'PYTHON', 'REACT', 'JAVASCRIPT'],
+    labels: [ 'HTML', 'CSS', 'DART', 'FLUTTER', 'PYTHON', 'REACT', 'JAVASCRIPT'],
     datasets: [
       {
         label: '2024',
@@ -25,7 +24,7 @@ const Chart = ({listOfData}) => {
 
   return (
     <CDBContainer style={{ padding: "0px 0px 30px"}}>
-      <h3 className="mt-5">My Professional Skills</h3>
+      <h3 className="mb-5 text-center font40 extraBold">My Professional Skills</h3>
       <HorizontalBar data={data} options={{ responsive: true }} />
     </CDBContainer>
   );

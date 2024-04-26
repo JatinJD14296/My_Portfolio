@@ -23,7 +23,23 @@
     display: block;
   }
 
-  i{
+  table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  td, th ,table  {
+    border: 1px solid hsl(261, 100%, 94%);
+    text-align: left;
+    padding: 20px;
+  }
+  
+  tr:nth-child(even) {
+    background-color:hsl(263, 100%, 96%);
+  } 
+
+  .header-social i{
     width: 30px;
     height: 30px;
     margin: 0 5px;
@@ -33,6 +49,11 @@
     padding: 8px;
     cursor: pointer;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+i.fa-solid.fa-magnifying-glass {
+  padding: 19px;
+  background: #f2eaff;
+  cursor: pointer;
 }
   ol, ul {
     list-style: none;
@@ -49,12 +70,16 @@
     border-collapse: collapse;
     border-spacing: 0;
   }
-  a {
+  a{
     text-decoration: none!important;
-    color: #0B093B!important;
+    color: #0B093B;
   }
   a:hover {
     color: #7620FF;
+  }
+
+  .home-text{
+    color: rgb(0, 0, 0);
   }
 
   .nav-color a{
@@ -123,9 +148,20 @@
     border-bottom: 2px solid #7620FF;
     color: #7620FF;
   }
+  input.input-wraper {
+    background: #f2eaff;
+    border: none;
+    padding: 15px;
+    width: 300px;
+    margin: 25px 0;
+    outline: none;
+}
   .tag {
     padding: 5px 10px;
     margin: 10px 0;
+  }
+  .bottom-margin{
+    margin-bottom: 40px;
   }
   .shadow {
     box-shadow: 0 0 11px rgba(237, 232, 237, 0.5)  ; 
@@ -152,6 +188,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+  .text-left{
+    text-align: left;
   }
   .flexSpaceNull {
     display: flex;
@@ -194,6 +233,13 @@
     line-height: 4.5rem;
   }
   @media only screen and (max-width: 859px) {
+    .mobile-blog{
+      width: 220px;
+    }
+    tr{
+      display: flex;
+      flex-wrap: wrap;
+    }
     .font11 {
       font-size: 0.688rem;
     }

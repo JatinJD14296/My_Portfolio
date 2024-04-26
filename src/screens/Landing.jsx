@@ -9,6 +9,8 @@ import Contact from "../components/Sections/Contact";
 import Services from "../components/Sections/Services";
 import Chart from "../components/Sections/Chart";
 import Footer from "../components/Sections/Footer";
+import Pricing from "../components/Sections/Pricing";
+import Qualification from "../components/Sections/Qualification";
 
 export default function Landing() {
   return (
@@ -17,9 +19,11 @@ export default function Landing() {
       <Header />
       <About />
       <Services />
-      <Chart listOfData={[ 'HTML', 'CSS', 'DART', 'FLUTTER', 'PYTHON', 'REACT', 'JAVASCRIPT']}/>
+      <Chart />
+      <Qualification/>
       <Projects />
       <Blog />
+      <Pricing/>
       <Contact />
       <Footer />
     </div>

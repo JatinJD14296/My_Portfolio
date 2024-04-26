@@ -13,12 +13,12 @@ export default function Services() {
         <div className="container"></div>
       </div>
       <div className="whiteBg text-center">
-        <div className="container text-center">
+        <div className="container ">
           <HeaderInfo>
             <h1 className="font40 extraBold">My Work History</h1>
             <p className="font13"></p>
           </HeaderInfo>
-          <ServiceBoxRow className="flex">
+          <ServiceBoxRow className="flexSpaceCenter">
             <ServiceBoxWrapper>
               <ServiceBox
                 icon="flutter"
@@ -49,11 +49,11 @@ export default function Services() {
           <div className="container">
             <Advertising className="flexSpaceCenter">
               <AddLeft>
-                <h4 className="font15 semiBold">
+                <h4 className="font15 semiBold text-left">
                   A few words about my achievements
                 </h4>
-                <h2 className="font40 extraBold">Achievements</h2>
-                <p className="font14">
+                <h2 className="font40 extraBold text-left">Achievements</h2>
+                <p className="font14 text-left">
                   I am proud to have earned various certifications and
                   achievements throughout my career. I attended the Flutter
                   Bootcamp in Vadodara and actively participated in the

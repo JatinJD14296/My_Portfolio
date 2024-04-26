@@ -17,8 +17,7 @@ export default function TopNavbar() {
     return () => {
       window.removeEventListener("scroll", () => setY(window.scrollY));
     };
-  }, [y]);
-
+  }, []);
 
   return (
     <>
@@ -27,7 +26,7 @@ export default function TopNavbar() {
       <Wrapper className="flexCenter animate whiteBg" style={y > 100 ? { height: "60px" } : { height: "80px" }}>
         <NavInner className="container flexSpaceCenter">
           <Link className="pointer flexNullCenter" to="home" smooth={true}> 
-            <h1 style={{ marginLeft: "15px", fontSize:'30px', fontFamily: 'Ananda'}} className="font20 extraBold">
+            <h1 style={{ marginLeft: "15px", fontSize:'30px', fontFamily: 'Ananda'}} className="font20 extraBold home-text">
               Jatin Hirapara
             </h1>
           </Link>
@@ -40,8 +39,8 @@ export default function TopNavbar() {
                 Home
               </Link>
             </li>
-            <li className="semiBold font15 pointer">
-            <Link activeClass="active" style={{ padding: "10px 15px" }} to="About" spy={true} smooth={true} offset={-80}>
+            <li className="semiBold font15 pointer ">
+            <Link activeClass="active" style={{ padding: "10px 15px",}} to="About" spy={true} smooth={true} offset={-80}>
               About
             </Link>
           </li>
@@ -66,13 +65,13 @@ export default function TopNavbar() {
               </Link>
             </li>
           </UlWrapper>
-          <UlWrapperRight className="flexNullCenter">
-             <a href= "mailto: name@email.com"> <i className="fa-solid fa-envelope"></i></a>
-             <a href= " https://www.linkedin.com/in/jatin-hirapara-53916718b/"><i className="fa-brands fa-linkedin"></i></a>
-             <a href= "https://github.com/JatinJD14296"><i className="fa-brands fa-github"></i></a>
-             <a href= "https://twitter.com/JatinJD14296"><i className="fa-brands fa-twitter"></i></a>
-             <a href= "https://developers.google.com/profile/u/FLUTTERKING"><i class="fa-brands fa-google"></i></a>
-             <a href= "https://medium.com/@jatinjd.fjs"><i className="fa-brands fa-medium"></i></a>
+          <UlWrapperRight className="flexNullCenter header-social">
+             <a href= "mailto: name@email.com" className="darkColor"> <i className="fa-solid fa-envelope"></i></a>
+             <a href= " https://www.linkedin.com/in/jatin-hirapara-53916718b/" className="darkColor" ><i className="fa-brands fa-linkedin"></i></a>
+             <a href= "https://github.com/JatinJD14296" className="darkColor" ><i className="fa-brands fa-github"></i></a>
+             <a href= "https://twitter.com/JatinJD14296" className="darkColor" ><i className="fa-brands fa-twitter"></i></a>
+             <a href= "https://developers.google.com/profile/u/FLUTTERKING" className="darkColor" ><i class="fa-brands fa-google"></i></a>
+             <a href= "https://medium.com/@jatinjd.fjs" className="darkColor" ><i className="fa-brands fa-medium"></i></a>
           </UlWrapperRight>
         </NavInner>
       </Wrapper>

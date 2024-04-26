@@ -4,7 +4,6 @@ import styled from "styled-components";
 import FlutterLogo from "../../assets/svg/Services/FlutterLogo";
 import StockTake from "../../assets/svg/Services/StockTake";
 import Google from "../../assets/svg/Services/Google";
-import PrinterIcon from "../../assets/svg/Services/PrinterIcon";
 
 export default function ServiceBox({ icon, title, subtitle, tag }) {
   let getIcon;
@@ -28,7 +27,7 @@ export default function ServiceBox({ icon, title, subtitle, tag }) {
     <Wrapper className="flex flexColumn text-center">
       <IconStyle>{getIcon}</IconStyle>
       <TitleStyle className="font20 extraBold">{title}</TitleStyle>
-      <div className="flex">
+      <div className="flexCenter">
         <p className="tag coralBg radius6 font13 extraBold">{tag}</p>
       </div>
       <SubtitleStyle className="font13">{subtitle}</SubtitleStyle>
