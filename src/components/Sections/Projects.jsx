@@ -3,11 +3,11 @@ import styled from "styled-components";
 import axios from "axios";
 
 import { useState, useEffect } from "react";
-// Components
 import ProjectBox from "../Elements/ProjectBox";
+import GitHubStarsChart from "../Sections/Starts";
 
 export default function Projects() {
-  const [userData, setDeta] = useState([]);
+  const [userData, setData] = useState([]);
 
   useEffect(() => {
     axios
@@ -15,7 +15,7 @@ export default function Projects() {
       .then(function (response) {
         // handle success
         console.log(response.data);
-        setDeta(response.data);
+        setData(response.data);
       })
       .catch((error) => {
         // handle error
@@ -29,19 +29,15 @@ export default function Projects() {
         <div className="container text-center">
           <HeaderInfo>
             <h1 className="font40 extraBold">My Awesome Projects</h1>
-            <p className="font13">
-             
-            </p>
+            <p className="font13"></p>
           </HeaderInfo>
           <div className="row">
             {userData.map((data) => {
               return (
                 <div className="col-xs-12 col-sm-4 col-md-4 col-lg-4">
                   <a href={data.html_url} target="_blank">
-                    <ProjectBox
-                      title={data.name}
-                      text={data.description}
-                    />
+                    <GitHubStarsChart />
+                    <ProjectBox title={data.name} text={data.description} />
                   </a>
                 </div>
               );
