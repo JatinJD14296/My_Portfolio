@@ -3,9 +3,10 @@ import React, { useState } from 'react';
 import { HorizontalBar } from 'react-chartjs-2';
 import { CDBContainer } from 'cdbreact';
 
-const Chart = () => {
+const Chart = ({listOfData}) => {
   const [data] = useState({
-    labels: [ 'HTML', 'CSS', 'DART', 'FLUTTER', 'PYTHON', 'REACT', 'JAVASCRIPT'],
+    labels: listOfData,
+    // labels: [ 'HTML', 'CSS', 'DART', 'FLUTTER', 'PYTHON', 'REACT', 'JAVASCRIPT'],
     datasets: [
       {
         label: '2024',

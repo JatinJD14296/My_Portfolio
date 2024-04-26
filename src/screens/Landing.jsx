@@ -17,7 +17,7 @@ export default function Landing() {
       <Header />
       <About />
       <Services />
-      <Chart />
+      <Chart listOfData={[ 'HTML', 'CSS', 'DART', 'FLUTTER', 'PYTHON', 'REACT', 'JAVASCRIPT']}/>
       <Projects />
       <Blog />
       <Contact />
