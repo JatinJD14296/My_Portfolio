@@ -34,7 +34,10 @@
     text-align: left;
     padding: 20px;
   }
-  
+  .news-data{ 
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    padding: 40px;
+  }
   tr:nth-child(even) {
     background-color:hsl(263, 100%, 96%);
   } 
@@ -174,6 +177,7 @@ i.fa-solid.fa-magnifying-glass {
   }
   .flexSpaceCenter {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
   }

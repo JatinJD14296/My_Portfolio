@@ -177,15 +177,3 @@ const AddImgWrapp1 = styled.div`
     -moz-box-shadow: 0 2px 15px rgba(0, 0, 0, 0.3);
   }
 `;
-const AddImgWrapp2 = styled.div`
-  width: 30%;
-  margin: 0 5% 10px 5%;
-  img {
-    width: 100%;
-    height: auto;
-    border-radius: 1rem;
-    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.3);
-    -webkit-box-shadow: 0 2px 15px rgba(0, 0, 0, 0.3);
-    -moz-box-shadow: 0 2px 15px rgba(0, 0, 0, 0.3);
-  }
-`;

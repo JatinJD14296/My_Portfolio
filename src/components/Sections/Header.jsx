@@ -151,15 +151,3 @@ const QuotesWrapper = styled.div`
   left: -20px;
   top: -10px;
 `;
-const DotsWrapper = styled.div`
-  position: absolute;
-  right: -100px;
-  bottom: 100px;
-  z-index: 2;
-  @media (max-width: 960px) {
-    right: 100px;
-  }
-  @media (max-width: 560px) {
-    display: none;
-  }
-`;

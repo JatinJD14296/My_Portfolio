@@ -4,7 +4,6 @@ import axios from "axios";
 
 import { useState, useEffect } from "react";
 import ProjectBox from "../Elements/ProjectBox";
-import GitHubLanguageChart from "./GitHubLanguageChart";
 
 export default function Projects() {
   const [userData, setData] = useState([]);
