@@ -43,7 +43,7 @@ export default function Projects() {
               return (
                 <div className="col-xs-12 col-sm-4 col-md-4 col-lg-4">
                   <a href={data.html_url} target="_blank" className="home-text">
-                    <GitHubLanguageChart repoName={data.name}/>
+                    {/* <GitHubLanguageChart repoName={data.name}/> */}
                     <ProjectBox title={data.name} text={data.description} />
                   </a>
                 </div>
