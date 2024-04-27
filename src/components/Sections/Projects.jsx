@@ -19,22 +19,22 @@ export default function Projects() {
         // handle error
         console.log(error);
       });
-  },[]);
+  }, []);
 
   return (
-    <Wrapper id="Projects ">
+    <Wrapper id="Projects">
       <div className="whiteBg">
         <div className="container text-center">
           <HeaderInfo>
             <h1 className="font40 extraBold">My Awesome Projects</h1>
-              <div className="Search-function">
-              <input 
-              className="input-wraper"
-                type="search" 
+            <div className="Search-function">
+              <input
+                className="input-wraper"
+                type="search"
                 placeholder="Search Project"
-                />
-                <i class="fa-solid fa-magnifying-glass"></i>
-              </div>
+              />
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
             <p className="font13"></p>
           </HeaderInfo>
           <div className="row">
@@ -57,7 +57,7 @@ export default function Projects() {
 
 const Wrapper = styled.section`
   width: 100%;
-  padding:70px 0;
+  padding: 70px 0;
 `;
 const HeaderInfo = styled.div`
   @media (max-width: 860px) {

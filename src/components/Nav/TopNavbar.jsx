@@ -27,7 +27,7 @@ export default function TopNavbar() {
         <NavInner className="container flexSpaceCenter">
           <Link className="pointer flexNullCenter" to="home" smooth={true}> 
             <h1 style={{ marginLeft: "15px", fontSize:'30px', fontFamily: 'Ananda'}} className="font20 extraBold home-text">
-              Jatin Hirapara
+              Jatin Hirapara1
             </h1>
           </Link>
           <BurderWrapper className="pointer" onClick={() => toggleSidebar(!sidebarOpen)}>

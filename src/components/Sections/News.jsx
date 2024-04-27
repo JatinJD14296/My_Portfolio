@@ -37,14 +37,14 @@ export default function NewsArticles() {
   return (
     <Wrapper id="News">
       <div className="container ">
-          <h3 className="mb-5 text-center font40 extraBold">Science News</h3>
-        <div className="flexSpaceCenter">  
+        <h3 className="mb-5 text-center font40 extraBold">Science News</h3>
+        <div className="flexSpaceCenter">
           {headlines.map((val) => (
             <div className="news-data">
               <a href={val.url} target="_blank">
                 <h1> {val.title} </h1>
               </a>
-              </div>
+            </div>
           ))}
         </div>
       </div>
@@ -54,5 +54,5 @@ export default function NewsArticles() {
 
 const Wrapper = styled.section`
   width: 100%;
-  padding:70px 0;
+  padding: 70px 0;
 `;
